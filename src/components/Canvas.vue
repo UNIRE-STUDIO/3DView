@@ -41,7 +41,7 @@ export default {
             scene.add(gltf.scene.children[0])
         });
 
-        const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
+        const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
         renderer.setSize(sizes.width, sizes.height);
 
         function render(){
@@ -61,7 +61,6 @@ export default {
     <div class="wrapper">
         <canvas class="canvas"></canvas>
     </div>
-    
 </template>
 
 <style scoped>
